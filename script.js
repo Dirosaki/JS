@@ -12,18 +12,13 @@ if (idade < 21 || idade > 55 || salario < 1000 || emprestimo < 500 || emprestimo
 else {
     alert("Emprestimo Aprovado");
     let parcelas = Number(prompt("Digite a quantidade de parcelas que deseja"));
-    // let total = emprestimo / (parcelas);
-    let parc = emprestimo / parcelas;
-    let parcelasJuros = (0.085 * 100) + parc;
-    let total = parcelasJuros * parcelas;
-    // let total = emprestimo * ()
+    let total = emprestimo * (1 + 0.085) ** parcelas;
     if (parcelas < 3 || parcelas > 24) {
         alert("Parcelamos apenas entre 3 e 24 vezes");
 
     }
-    else {
+    else {     
         alert(`Você deverá pagar o total de R$${total.toFixed(2)} divido em ${parcelas} parcelas de R$${(total / parcelas).toFixed(2)}`);
-
     }
 }
 
