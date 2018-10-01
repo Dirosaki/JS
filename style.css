@@ -33,6 +33,7 @@ h3{
 p{
     font-size: 12pt;
     font-weight: bold;
+    width: 65%;
 }
 .contain{
     display: flex;
@@ -47,22 +48,23 @@ p{
     justify-content: space-evenly;
     flex-direction: column;
     height: 350px;
-    width: 300px;
+    width: 20%;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 25px;
     box-shadow: 0 0px 20px inset black, 0 0 20px black;
     transition: .5s;
+    text-align: center;
 }
 
 .bloco:hover{
-    transform: scale(1.05) translateY(-15px) scaleX(-1);
-    background-color: rgba(0, 0, 0, 0.2);
+    transform: scale(1.05) translateY(-15px);
+    background-color: rgba(255, 255, 255, 0.5);
     /* visibility: hidden; */
 }
 
 .icon{
-    height: 30%;
-    width: 30%;
+    height: 50%;
+    width: 50%;
     border-radius: 20px;
     background-image: url("js-square-brands.svg");
     background-size: cover;
